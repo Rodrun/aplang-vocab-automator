@@ -5,5 +5,5 @@ AP Lang vocab list definition finder
 
 Can be installed with `pip`.
 
-- requests
-- beautifulstone4
+- [requests](https://pypi.python.org/pypi/requests/2.18.4)
+- [beautifulsoup4](https://pypi.python.org/pypi/beautifulsoup4)
