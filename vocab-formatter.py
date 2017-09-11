@@ -1,4 +1,3 @@
-# For AP Lang vocab lists, will return each word itself in the list.
 import requests
 from bs4 import BeautifulSoup
 
@@ -25,7 +24,6 @@ with open(path) as f:
     content = f.readlines()
 f.close()
 
-definition_list = []
 for element in content:
     word = element[:element.find(":")]
     print(word + "\t" + str.lstrip(get_definition(word).text).split(":")[1])
