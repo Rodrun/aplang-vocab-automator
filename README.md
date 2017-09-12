@@ -33,3 +33,9 @@ $ pip install requests beautifulsoup4
 ```
 $ python3 vocab-formatter.py
 ```
+
+## Limitations
+
+Each vocabulary word must be in a new line. If a vocab word has a colon (:) after it, it is fine, because I made it specifically for a vocab list that my English teacher gives out, and it includes a colon after each words with other letters like "n., adj., etc..." So if you have something like `amorpheous: n.`, the script will only look for the token before the colon.
+
+*Note:* I do **not** *think* that words with spaces will work correctly, however, I have not tested this *yet*. This includes something like `geology ` or ` geology`, etc. with whitespace leading or trailing.
